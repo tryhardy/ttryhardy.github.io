@@ -1,0 +1,30 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 10px 0 10px 0;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer__author {
+  font-size: 14px;
+  max-width: 250px;
+}
+
+.footer__author a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer__author a:hover {
+  text-decoration: none;
+}
+
+.footer__logo {
+  flex: 1;
+  max-width: 250px;
+  text-align: center;
+}

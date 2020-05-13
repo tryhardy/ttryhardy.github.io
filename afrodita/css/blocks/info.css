@@ -1,0 +1,20 @@
+.info {
+  background-color: black;
+}
+
+.info .container {
+  background-image: url(../../img/bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info p {
+  color: whitesmoke;
+  padding: 20px 50px 30px 90px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.info b {
+  color: #e1942a;
+}

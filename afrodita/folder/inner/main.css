@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Gora-Free;
+  src: url('/fonts/Gora-Free.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Lightitalic;
+  src: url(/fonts/OpenSans-LightItalic.ttf);
+}
+
+body {
+  width: 100%;
+  background: white;
+  font-size: 14px;
+  margin: 0px;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1em;
+  padding: 10px 20px;
+}
+
+.container {
+  display: block;
+  width: 1100px;
+  margin: auto;
+}
+
+.header {
+  display: block;
+  background: #1a1b1c;
+  border: 1px solid transparent;
+
+}
+.title {
+  font-family: Gora-Free;
+  font-size: 18px;
+  color: #e1942a;
+  padding: 0px 19px;
+  margin: 32px 0px;
+  display: inline-block;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 60px;
+}
+
+.banner {
+  margin: auto;
+  display: block;
+  padding: 80px;
+}

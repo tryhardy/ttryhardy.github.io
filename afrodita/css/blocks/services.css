@@ -1,0 +1,48 @@
+
+.services__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.services__img {
+  position: relative;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+  max-height: 150px;
+}
+
+.services__img img {
+  filter: brightness(0.35);
+}
+
+.services__title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__item {
+  max-width: 260px;
+  margin-bottom: 45px;
+}
+
+.services__content-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.services__desc {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.5;
+}

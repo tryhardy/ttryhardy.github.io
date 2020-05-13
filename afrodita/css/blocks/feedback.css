@@ -1,0 +1,135 @@
+.feedback {
+  display: flex;
+}
+
+.feedback-form {
+}
+
+.feedback__row {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.feedback--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback__title {
+  font-size: 49px;
+  margin-bottom: 10px;
+}
+
+.feedback__column {
+  flex: 1;
+  padding-right: 22px;
+}
+
+.feedback__column:last-child {
+  padding-right: 0px;
+}
+
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+input.feedback__field[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.feedback-form textarea {
+  padding: 10px 10px 5px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.feedback__field:focus,
+.feedback__submit input:focus {
+  outline: #e1942a auto 1px;
+}
+
+.feedback__radio {
+  margin-right: 20px;
+}
+
+input.feedback__field[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.feedback__submit {
+  text-align: right;
+}
+
+.feedback__submit input {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 17px 30px;
+  background-color: #333333;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.feedback__submit input:hover {
+  background-color: #e1942a;
+}
+
+.feedback--radio-input:checked + .feedback__radio-fake {
+  border: 1px solid #e1942a;
+}
+
+.feedback--radio-input:checked + .feedback__radio-fake:before {
+  width: 10px;
+  height: 10px;
+}
+
+.feedback--radio-input:checked + .feedback__radio-fake + .feedback__radio-text {
+  color: #e1942a;
+}
+
+.feedback__radio-fake {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #e1942a;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__radio-fake:before {
+  content: " ";
+  display: flex;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #e1942a;
+}
+
+.feedback__label.feedback--radio-label {
+  display: flex;
+}
+
+.feedback__radio-text {
+  margin-left: 4px;
+}
+
+.feedback--radio-input {
+  position: absolute;
+  left: -9999px;
+}
+
+

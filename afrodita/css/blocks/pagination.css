@@ -1,0 +1,98 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.pagination__count-pages {
+  font-size: 14px;
+  color: #656464;
+  padding-right: 30px;
+}
+
+.pagination__pages ul {
+  display: flex;
+}
+
+.pagination__link.pagination__link--active {
+  background-color: #2b2b40;
+  color: white;
+  border-radius: 2px;
+}
+
+.pagination .pagination__link {
+  display: block;
+  padding: 5px 10px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #262424;
+  font-weight: bold;
+  border-radius: 2px;
+  background-size: 6px;
+}
+
+.pagination .pagination__link--right {
+  background: url('../../icons/right.png') no-repeat center;
+  background-size: 6px;
+}
+
+.pagination .pagination__link--left {
+  background: url('../../icons/right.png') no-repeat center;
+  background-size: 6px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.news .pagination__item--active .pagination__link {
+  color: white;
+  background-color: #2b2b40;
+}
+
+.comments .pagination__item--active .pagination__link {
+  color: #e1942a;
+  background-color: black;
+}
+
+.news .pagination .pagination__link:hover {
+  background-color: #2b2b40;
+  color: white;
+  border-radius: 2px;
+}
+
+.comments .pagination .pagination__link:hover {
+  background-color: transparent;
+  color: #e1942a;
+  border-radius: 2px;
+}
+
+.comments .pagination .pagination__item--active .pagination__link:hover {
+  background-color:  black;
+  color: #e1942a;
+  border-radius: 2px;
+}
+
+
+.pagination .pagination__link--inactive {
+  background: url('../../icons/right-gray.png') no-repeat center;
+  background-size: 6px;
+}
+
+.pagination .pagination__link--inactive .pagination__link:hover {
+  background-color: transparent;
+}
+
+.news .pagination .pagination__link--right .pagination__link:hover {
+  background: url('../../icons/right-white.png') no-repeat center #2b2b40;
+  background-size: 6px;
+}
+
+.comments .pagination .pagination__link--right .pagination__link:hover {
+  background: url('../../icons/right-yellow.png') no-repeat center #000;
+  background-size: 6px;
+}

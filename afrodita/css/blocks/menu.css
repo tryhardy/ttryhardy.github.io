@@ -1,0 +1,74 @@
+.menu {
+  flex: 1;
+}
+
+.menu__primary-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item,
+.menu__link {
+  color: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.menu__link {
+  display: inline-block;
+  padding: 0px 10px 0px 30px;
+  vertical-align: middle;
+}
+
+.menu__link:before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 12px;
+  background: no-repeat center;
+  background-size: contain;
+  transition: all .3s;
+}
+
+.menu__item--icon--pulse .menu__link:before {
+  background-image: url('../../img/icon-pulse-white.png');
+}
+
+.menu__item--icon--pulse .menu__link:hover:before {
+  background-image: url('../../img/icon-pulse.png');
+}
+
+.menu__item--icon--star .menu__link:before {
+  background-image: url('../../img/icon-star-white.png');
+}
+
+.menu__item--icon--star .menu__link:hover:before {
+  background-image: url('../../img/icon-star.png');
+}
+
+.menu__item--icon--dumbbell .menu__link:before {
+  background-image: url('../../img/icon-dumbbell-white.png');
+}
+
+.menu__item--icon--dumbbell .menu__link:hover:before {
+  background-image: url('../../img/icon-dumbbell.png');
+}
+
+.menu__item--active .menu__link {
+  color: #e1942a;
+}
+
+.menu__item--active.menu__item--icon--pulse .menu__link:before {
+  background-image: url('../../img/icon-pulse.png');
+}
+
+.menu__item--active.menu__item--icon--star .menu__link:before {
+  background-image: url('../../img/icon-star.png');
+}
+
+.menu__item--active.menu__item--icon--dumbbell .menu__link:before {
+  background-image: url('../../img/icon-dumbbell.png');
+}
