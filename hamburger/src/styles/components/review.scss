@@ -1,0 +1,198 @@
+.review {
+  background-color: #000;
+  @include theme($dark-theme: true);
+
+  .close-btn {
+    right: 1.5rem;
+    top: 1rem;
+    &:before,
+    &:after {
+      background-color: $orange;
+    }
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 100%;
+  }
+  
+  &__item {
+    flex: 1 1 25%;
+    position: relative;
+    overflow: hidden;
+    height: 50%;
+    transition: opacity .3s;
+
+    @include tablets {
+      flex: 1 1 50%;
+      height: 25%;
+    }
+
+    &:hover .review__content {
+      opacity: 1;
+      left: 0;
+    }
+
+    &--active .review__content {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+
+  &__content {
+    padding: rem(20px);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    transition: all 0.3s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets {
+      text-align: center;
+    }
+  }
+  
+  &__photo {
+    overflow: hidden;
+    height: 100%;
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20px);
+
+    @include desc__text;
+      margin-bottom: rem(10px);
+  }
+
+  &__text {
+    @include desc__text;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+      margin-bottom: 0;
+      font-size: .9rem;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+}
+
+.review__item--overlay {
+
+    .review__content {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #00000080;
+      z-index: 99999;
+      opacity: 1;
+      left: 0;
+      transition: opacity 1s;
+      display: flex;
+      align-items: center;
+    }
+
+    .review__container {
+      background-color: white;
+      color: #2f3234;
+      width: 40rem;
+      padding: rem(30px);
+      border-radius: 8px;
+      position: relative;
+      text-align: left;
+
+      @include tablets {
+        width: 80%;
+      }
+
+      @include mobile {
+        width: 95%;
+      }
+    }
+
+    .review__text {
+      @include mobile {
+        display: block;
+      }
+    }
+
+    .btn {
+      display: none;
+    }
+
+    .close-btn {
+      display: block;
+      top: rem(25px);
+
+      &:before,
+      &:after {
+        background-color: $orange;
+      }
+    }
+}
+
+.review__overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .review__container {
+    padding: 2rem;
+    width: 40%;
+    min-height: 3rem;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+
+    @include tablets {
+      width: 70%;
+    }
+
+    @include mobile {
+      width: 90%;
+    }
+  }
+
+  .review__desc {
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  .close-btn {
+    display: block;
+    top: rem(15px);
+  
+    &:before,
+    &:after {
+      background-color: $orange;
+    }
+  }
+}
+
+
+  

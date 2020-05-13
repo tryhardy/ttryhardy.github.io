@@ -1,0 +1,44 @@
+@function rem($px) {
+  @return $px / 14px + 0rem;
+}
+
+@mixin theme ($dark-theme: true) {
+    @if $dark-theme {
+      color: white;
+    } @else {
+      color: $dark-gray;
+    }
+  }
+  
+  @mixin uppercase-font ($white-color){
+    font-size: $normal-fsize;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $white-color;
+  }
+  
+  @mixin btn {
+    background-color: $orange;
+    color: inherit;
+    padding: rem(12px) rem(15px);
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  
+  @mixin desc__text {
+    font-weight: lighter;
+    font-size: rem(14px);
+    line-height: 1.6;
+}
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
