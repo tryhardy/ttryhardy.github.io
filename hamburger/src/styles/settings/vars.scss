@@ -1,0 +1,22 @@
+$container: rem(940px);
+
+$font: 'Ubuntu', sans-serif;
+$font-titleh2: 'Gagalin', sans-serif;
+$font-titleh3: 'Lifehack', sans-serif;
+
+$normal-fsize: 1rem;
+
+$orange: #e45028;
+$light-orange: #f9b43b;
+$dark-gray: #2f3234;
+$black: #000;
+
+$section-height: 100%;
+
+$photos: (1: '/img/reviews/1.png', 2:'/img/reviews/1.png', 3: '/img/reviews/1.png', 4: '/img/reviews/1.png', 5: '/img/reviews/1.png', 6: '/img/reviews/1.png', 7: '/img/reviews/1.png', 8: '/img/reviews/1.png');
+
+$number-bg: (
+  1: url('/img/bg-menu-1.jpg'),
+  2: url('/img/bg-menu-2.jpg'),
+  3: url('/img/bg-menu-3.jpg')
+);
