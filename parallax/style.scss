@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.parallax {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 100px;
+
+  &__layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left:0;
+  }
+
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    background-color: #d9d93a;
+    transform: translateZ(0);
+  }
+
+  &__bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+$layers: 10;
+@for $layerNum from $layers through 1 {
+  .parallax__layer:nth-child(#{$layerNum}) {
+    $currentLayer: $layers - $layerNum;
+    $perspective: -$currentLayer * 50px;
+    $scale: $currentLayer * .5 + 1;
+
+    transform: translateZ($perspective) scale($scale);
+  }
+}
