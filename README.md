@@ -1,3 +1,6 @@
-> tryhardy.github.io/parallax
+> [Параллакс на чистом CSS](tryhardy.github.io/parallax)
 
-> tryhardy.github.io/hamburger
+> [Mr. Burger](tryhardy.github.io/hamburger/)
+
+> [Спортзал "Афродита"](tryhardy.github.io/afrodita)
+
