@@ -1,0 +1,29 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding: rem(10px) 0;
+    z-index: 9999;
+    top: 0;
+  }
+  .header__center {
+    flex: 1;
+  }
+  .header__left {
+    padding-right: rem(65px);
+    z-index: 999999;
+  }
+
+  .logo__link {
+    display: block;
+    width: rem(100px);
+  }
+
+  .header__right {
+    .btn {
+      margin-top: 0;
+
+      @include tablets {
+        margin-right: rem(20px);
+      }
+    }
+  }

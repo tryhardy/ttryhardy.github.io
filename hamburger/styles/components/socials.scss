@@ -1,0 +1,34 @@
+.socials {
+    display: flex;
+    justify-content: flex-end;
+
+    @include mobile {
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: rem(20px);
+
+        &:last-child {
+            margin-right: rem(0px);
+        }
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__svg {
+        opacity: 0.5;
+        fill: white;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

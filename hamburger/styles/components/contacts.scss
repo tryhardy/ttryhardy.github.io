@@ -1,0 +1,33 @@
+.contacts {
+    background-image: url('/img/map.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+
+.map {
+    &__marker {
+        position: absolute;
+        width: rem(100px);
+
+        &--1 {
+            top: 25%;
+            left: 45%;
+        }
+
+        &--2 {
+            top: 40%;
+            left: 59%;
+        }
+        &--3 {
+            top: 71%;
+            left: 46%;
+        }
+        &--4 {
+            top: 56%;
+            left: 79%;
+        }
+    }
+}

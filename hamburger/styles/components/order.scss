@@ -1,0 +1,168 @@
+.order {
+  display:flex;
+
+  @include tablets {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &--section {
+    background-color: #000;
+    background-image: url('/img/bg-order.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include theme($dark-theme: true);
+  }
+
+  &__column {
+    flex: 1 1 50%;
+    margin-right: rem(20px);
+
+    &:last-child {
+      margin-right: rem(0px);
+
+      @include tablets {
+        margin-right: 0;
+      }
+    }
+
+    @include tablets {
+      margin-right: 0;
+    }
+
+  }
+
+  &__row {
+    margin-bottom: rem(14px);
+    display: flex;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__error {
+    color: red;
+  }
+
+  &__block {
+    flex: 1;
+    margin-right: rem(20px);
+    color: inherit;
+
+  
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--radio {
+      display: flex;
+      align-items: center;
+      flex: none;
+
+      .order__input {
+        width: auto;
+        position: absolute;
+        left: rem(-9999px);
+      }
+    }
+  }
+
+
+  &__input {
+    width: 100%;
+    padding: rem(8px) rem(21px);
+    border: 2px solid transparent;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $light-orange;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+
+}
+
+.order__block--radio {
+
+  @include mobile {
+    flex: none;
+  }
+
+  .order__input:checked+.order__fake-button:before {
+      width: 7px;
+      height: 7px;
+  }
+  .order__fake-button {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;;
+    justify-content: center;
+    align-items: center;
+    margin-right: rem(10px);
+
+    &:before {
+      content: " ";
+      display: flex;
+      width: rem(0px);
+      height: rem(0px);
+      border-radius: 50%;
+      background-color: $orange;
+    }
+  }
+}
+
+.container--order {
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+
+.order__block--checkbox {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    flex: none;
+  }
+
+  .order__input:checked+.order__fake-button:before {
+    background-image: url('/icons/check.svg');
+  }
+
+  .order__input {
+    width: auto;
+    position: absolute;
+    left: rem(-9999px);
+  }
+
+  .order__fake-button {
+    display: flex;
+    width: rem(15px);
+    height: rem(15px);
+    background-color: white;;
+    justify-content: center;
+    align-items: center;
+    margin-right: rem(10px);
+    border-radius: 0;
+
+    &:before {
+      content: " ";
+      display: flex;
+      width: rem(12px);
+      height: rem(12px);
+    }
+  }
+}
