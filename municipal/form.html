@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__wrapper header__wrapper--no-grid">
+              <div class="header__left">
+                <div class="time">Пятница, 04 сентября 2020</div>
+              </div>
+              <div class="header__right">
+                <div class="poor-vision"> <a href="#"><i class="fas fa-glasses"></i><span>Версия для слабовидящих</span></a></div>
+                <div class="social">
+                  <ul class="social__list">
+                          <li class="social__item"><a class="social__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li class="social__item"><a class="social__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li class="social__item"><a class="social__link" href="#"><i class="fab fa-youtube"></i></a></li>
+                          <li class="social__item"><a class="social__link" href="#" id="sendmail"><i class="fas fa-envelope"></i><span>Подписаться на новости</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__wrapper">
+              <div class="logo"><a href="/"><img src="static/images/common/logo.png" alt=""><span>МУНИЦИПАЛЬНОЕ ОБРАЗОВАНИЕ ЗЕЛЕНОГРАДСКИЙ ГОРОДСКОЙ ОКРУГ</span></a></div>
+              <div class="header__nav">
+                <div class="menu-mobile"><span>Меню</span>
+                  <div class="header-burger">
+                    <div class="header-burger-line"></div>
+                    <div class="header-burger-line"></div>
+                    <div class="header-burger-line"></div>
+                  </div>
+                </div>
+                <nav class="menu">
+                  <div class="menu-mobile__close-m">
+                    <div class="header-nav__close-m-item"></div>
+                    <div class="header-nav__close-m-item"></div>
+                  </div>
+                  <ul class="menu__list">
+                          <li class="menu__item"><span><a class="menu__link" href="/city.html">Город</a><i class="menu__submenu-icon fas fa-chevron-down"></i></span>
+                            <ul class="menu__submenu-list">
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Антитеррор</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Противодействие коррупции</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Работа системы «безопасный город»</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Направления деятельности</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Полезные ресурсы</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu__item"><a class="menu__link" href="./catalog.html">Документы</a></li>
+                          <li class="menu__item"><span><a class="menu__link" href="./company.html">Направления деятельности</a><i class="menu__submenu-icon fas fa-chevron-down"></i></span>
+                            <ul class="menu__submenu-list">
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Антитеррор</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Противодействие коррупции</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Работа системы «безопасный город»</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Направления деятельности</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Полезные ресурсы</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu__item"><span><a class="menu__link" href="./blog.html">Услуги</a><i class="menu__submenu-icon fas fa-chevron-down"></i></span>
+                            <ul class="menu__submenu-list">
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Антитеррор</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Противодействие коррупции</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Работа системы «безопасный город»</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Направления деятельности</a></li>
+                              <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Полезные ресурсы</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu__item"><a class="menu__link" href="./contacts.html">Полезная информация</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__block">
+                <div class="header__search">
+                  <form class="search" type="GET" action="/search/">
+                    <div class="search__input">
+                      <div class="search__find"><svg viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.4228 26.096C18.6461 26.096 20.7461 25.2784 22.4173 23.7912L30.5411 32.24C30.6915 32.3968 30.8897 32.4752 31.0871 32.4752C31.2838 32.4752 31.4812 32.3976 31.6316 32.2416C31.9331 31.9296 31.9339 31.4232 31.6331 31.1104L23.5024 22.6552C26.5463 18.884 26.3689 13.2368 22.9587 9.69124C21.2127 7.87524 18.8914 6.87524 16.422 6.87524C13.9526 6.87524 11.6313 7.87524 9.8853 9.69124C6.28303 13.4376 6.28303 19.5344 9.8853 23.2808C11.6321 25.096 13.9534 26.096 16.4228 26.096ZM10.9781 10.8208C12.4326 9.30804 14.366 8.47524 16.4228 8.47524C18.4796 8.47524 20.413 9.30804 21.8674 10.8208C24.8713 13.9448 24.8713 19.0272 21.8674 22.1512C20.413 23.664 18.4796 24.4968 16.4228 24.4968C14.366 24.4968 12.4326 23.664 10.9781 22.1512C7.97504 19.0272 7.97504 13.9448 10.9781 10.8208Z" fill="#292727"/>
+</svg>
+                      </div>
+                      <input placeholder="Введите текст" name="q">
+                      <button class="search__find-button" type="submit">Найти</button>
+                    </div>
+                    <button class="search__button" data-status="open"><svg viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<path x="0" y="0" width="100%" height="100%" d="M16.4228 26.096C18.6461 26.096 20.7461 25.2784 22.4173 23.7912L30.5411 32.24C30.6915 32.3968 30.8897 32.4752 31.0871 32.4752C31.2838 32.4752 31.4812 32.3976 31.6316 32.2416C31.9331 31.9296 31.9339 31.4232 31.6331 31.1104L23.5024 22.6552C26.5463 18.884 26.3689 13.2368 22.9587 9.69124C21.2127 7.87524 18.8914 6.87524 16.422 6.87524C13.9526 6.87524 11.6313 7.87524 9.8853 9.69124C6.28303 13.4376 6.28303 19.5344 9.8853 23.2808C11.6321 25.096 13.9534 26.096 16.4228 26.096ZM10.9781 10.8208C12.4326 9.30804 14.366 8.47524 16.4228 8.47524C18.4796 8.47524 20.413 9.30804 21.8674 10.8208C24.8713 13.9448 24.8713 19.0272 21.8674 22.1512C20.413 23.664 18.4796 24.4968 16.4228 24.4968C14.366 24.4968 12.4326 23.664 10.9781 22.1512C7.97504 19.0272 7.97504 13.9448 10.9781 10.8208Z" fill="#292727"/>
+</svg>
+                    </button>
+                  </form>
+                </div>
+                <div class="header__login">
+                  <button class="btn login">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="row">
+              <div class="breadcrumbs-container col-lg-12 col-xl-6">
+                <div class="breadcrumbs__list"><a class="breadcrumbs__item" href="/"><span>Главная</span></a><span class="breadcrumbs__item">Пресс-центр</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="left-sidebar col-lg-3">
+              <div class="sidebar-menu">
+                <ul class="sidebar-menu__list">
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="video.html">Видео трансляции</a></li>
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="form.html">Интернет приемная Губернатора Калининградской области</a></li>
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="structure.html">Структура администрации</a></li>
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#">Пустая ссылка</a></li>
+                  <li class="sidebar-menu__item">
+                    <button class="sidebar-menu__open-submenu"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.6788 15.6687L1.4406 2.43053C1.19826 2.1882 1.19826 1.79197 1.44236 1.54787C1.68647 1.30377 2.08093 1.30553 2.32326 1.54787L15.5597 14.7843C15.8038 15.0284 15.802 15.4229 15.5597 15.6652C15.3174 15.9111 14.9229 15.9128 14.6788 15.6687Z" fill="#4141FF" stroke="#4141FF" stroke-width="0.7"/>
+<path d="M1.44245 15.667C1.19834 15.4229 1.20011 15.0284 1.44245 14.7861L14.6806 1.54787C14.9247 1.30377 15.3192 1.30553 15.5615 1.54787C15.8056 1.79197 15.8039 2.18643 15.5615 2.42876L2.32511 15.6652C2.08101 15.9128 1.68655 15.9111 1.44245 15.667Z" fill="#4141FF" stroke="#4141FF" stroke-width="0.7"/>
+</svg>
+                    </button><a class="sidebar-menu__link" href="gallery.html">Фотогалерея</a>
+                    <ul class="sidebar-menu__submenu">
+                      <li class="sidebar-menu__submenu-item"><a class="sidebar-menu__submenu-link sidebar-menu__submenu-link--active" href="#">Пустая ссылка</a></li>
+                      <li class="sidebar-menu__submenu-item"><a class="sidebar-menu__submenu-link" href="#">Пустая ссылка</a></li>
+                      <li class="sidebar-menu__submenu-item"><a class="sidebar-menu__submenu-link" href="#">Пустая ссылка</a></li>
+                      <li class="sidebar-menu__submenu-item"><a class="sidebar-menu__submenu-link" href="#">Пустая ссылка</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#">Пустая ссылка</a></li>
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#">Пустая ссылка</a></li>
+                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#">Пустая ссылка</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-content col-lg-6">
+              <div class="page-content__title">
+                <h1>Интернет-приёмная Губернатора Калининградской области</h1>
+              </div>
+              <div class="feedback">
+                <div class="feedback__description">
+                  <div class="feedback__header">Правила</div>
+                  <p>В соответствии со ст. 7 Федерального закона от 02.05.2006 года № 59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации» при направлении обращения в обязательном порядке необходимо указывать фамилию, имя, отчество, почтовый адрес, по которому должен быть направлен ответ, адрес электронной почты, контактный телефон.</p>
+                  <p>Поля, отмеченные <blue>*</blue>, обязательны для заполнения</p>
+                </div>
+                <form class="feedback__form">
+                  <div class="feedback__row">
+                    <div class="error">
+                      <p>* Имя - ошибка</p>
+                      <p>* Фамилия - ошибка</p>
+                    </div>
+                  </div>
+                  <div class="feedback__row feedback__row--center">
+                    <label class="radio">
+                      <input type="radio" value="В письменной форме" name="form_answer"><span>В письменной форме</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" value="В электронном виде" name="form_answer"><span>В электронном виде</span>
+                    </label>
+                  </div>
+                  <div class="feedback__row">
+                    <div class="feedback__header">Ваша контактная информация</div>
+                    <div class="feedback__small-header">* — обязательные поля</div>
+                  </div>
+                  <div class="feedback__row">
+                    <label><span>Фамилия</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_lastname">
+                    </label>
+                    <label><span>Имя</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_name">
+                    </label>
+                    <label><span>Отчество</span>
+                      <input type="text" name="form_surname">
+                    </label>
+                    <label><span>E-mail</span>
+                      <input type="email" name="form_email"><span class="feedback__input-desc">Для получения информации о статусе регистрации обращения</span>
+                    </label>
+                    <label><span>Контактный телефон</span>
+                      <input type="text" name="form_phone"><span class="feedback__input-desc">В целях объективного и всестороннего рассмотрения Вашего обращения необходимо указать номер контактного телефона для возможных уточнений</span>
+                    </label>
+                  </div>
+                  <div class="feedback__row">
+                    <div class="feedback__header">Почтовый адрес</div>
+                  </div>
+                  <div class="feedback__row feedback__row-3">
+                    <label><span>Индекс</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_index">
+                    </label>
+                    <label><span>Регион</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_region">
+                    </label>
+                    <label><span>Населенный пункт</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_city">
+                    </label>
+                    <label><span>Улица</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_street">
+                    </label>
+                    <label><span>Дом</span><span class="feedback__required">*</span>
+                      <input type="text" name="form_house">
+                    </label>
+                    <label><span>Корпус</span>
+                      <input type="text" name="form_section">
+                    </label>
+                    <label><span>Квартира</span>
+                      <input class="error" type="text" name="form_appartments">
+                    </label>
+                  </div>
+                  <div class="feedback__row">
+                    <div class="feedback__header">Вопрос</div>
+                  </div>
+                  <div class="feedback__row feedback__row--full">
+                    <label><span>Тематика</span>
+                      <input type="text" name="form_theme">
+                    </label>
+                    <label><span>Текст обращения</span><span class="feedback__required">*</span>
+                      <textarea name="form__message"></textarea><span class="feedback__input-desc"><span id="symbol-counter">0 </span><span>&nbsp;из 5 000 знаков</span></span>
+                    </label>
+                  </div>
+                  <div class="feedback__row">
+                    <div class="feedback__header">Вложенные файлы</div>
+                  </div>
+                  <div class="feedback__row feedback__row--full">
+                    <label><span>Прикрепить файл:</span>
+                      <input type="file" name="form__files[]" multiple id="files">
+                      <div class="feedback__file">
+                        <div class="feedback__file-button">Выбрать файл</div><span class="feedback__input-desc" id="file-name">Ничего не выбрано	</span>
+                      </div>
+                      <div class="feedback__file-desc">
+                        <p>Вы можете прикрепить дополнительные документы или материалы, более полно раскрывающие суть Вашего обращения. Имя файла должно быть на английском языке.</p>
+                        <p><b>Отправка нескольких файлов:</b> </p>
+                        <p>Если Вам нужно отправить несколько файлов, рекомендуем сначала заархивировать их в RAR или ZIP архив.</p>
+                        <p>Допустимый тип файла: <b>*.rar, *.zip, *.doc, *.docx, *.rtf, *.pdf, *.jpg</b></p>
+                        <p>Суммарный размер файла <b>не может превышать 10 Мб.</b></p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="feedback__row">
+                    <div class="feedback__header">Защита от автоматических сообщений	</div>
+                  </div>
+                  <div class="feedback__row feedback__row--full">
+                    <label><span>Введите слово на картинке</span><span class="feedback__required">*</span>
+                      <div class="captcha"><img src="/static/images/content/captcha.png">
+                        <input type="text" name="captcha">
+                      </div>
+                    </label>
+                  </div>
+                  <div class="feedback__row">
+                    <input class="btn" type="submit" name="form__submit">
+                    <div class="success">Сообщение успешно отправлено</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="right-sidebar col-lg-3">
+              <div class="sidebar__block">
+                <div class="feedback__description">
+                  <div class="feedback__header">Правила</div>
+                  <p>1. Обращения поступают на рассмотрение в Отдел по работе с обращениями граждан Правительства Калининградской области.</p><br>
+                  <p>1. Обращения поступают на рассмотрение в Отдел по работе с обращениями граждан Правительства Калининградской области.</p><br>
+                  <p>2. Обращения граждан регистрируются в трехдневный срок c момента поступления и рассматриваются в соответствии с Федеральным законом "О порядке рассмотрения обращений граждан Российской Федерации" 59-ФЗ.</p><br>
+                  <p>3. Ответ на обращение направляется в форме электронного документа по адресу электронной почты или в письменной форме по почтовому адресу, указанному в обращении.</p><br>
+                  <p>4. Размер электронного обращения не может превышать 5000 знаков.</p><br>
+                  <p>5. Обращение может содержать вложенные документы и материалы в электронной форме в виде одного файла. Размер файла вложения не может превышать 10 Мб.</p><br>
+                  <p>6. Информация о персональных данных авторов обращений хранится и обрабатывается с соблюдением требований законодательства РФ о персональных данных</p><br>
+                  <p>Выписка из Указа Губернатора Калининградской области от 09 января 2013 года № 3 «О мерах, направленных на обеспечение выполнения государственными гражданскими служащими Правительства Калининградской области, работниками и гражданами обязанностей, предусмотренных Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных».</p><br>
+                  <p><blue>Телефон для справок:</blue></p>
+                  <p>Информацию о ходе рассмотрения Ваших обращений можно получить по телефону:</p><br>
+                  <p><a class="tel" href="tel:+74012599078">8 (4012) 599-078</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="popup">
+        <div class="overlay"></div>
+        <div class="popup__wrapper">
+          <div class="popup__close">
+            <div class="popup__close-line"></div>
+            <div class="popup__close-line"></div>
+          </div>
+          <div class="popup__content">
+            <div class="popup__title"><i class="far fa-envelope"></i>
+              <p class="subscribe__title">Новостная рассылка</p>
+            </div>
+            <form class="subscribe">
+              <label class="subscribe__label" for="email"> <span>Ваш email</span>
+                <input id="email" type="email" name="email" required>
+              </label>
+              <button class="btn subscribe__submit" type="submit">Получать новости</button>
+              <p class="subscribe__info">Текст с информацией о рассылке</p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__left"><a class="footer__logo" href="/"><img src="static/images/common/logo-large.png" alt=""></a>
+              <p>© 2020 Официальный сайт муниципального образования «Зеленоградский городской округ» Калининградской области</p>
+            </div>
+            <div class="footer__center">
+              <div class="footer__content">
+                <p>Телефон +7 4015 0 313 62</p>
+                <p>Факс +7 4012 463 639</p>
+                <p>Дежурный ЕДДС: 8 800 200 36 75 (звонок бесплатный)</p>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__content">
+                <p>info@admzelenogradsk.ru (для официальной переписки) </p>
+                <p>post@admzelenogradsk.ru (для приема обращений)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="static/js/jquery.fancybox.pack.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
